@@ -1,0 +1,61 @@
+=head1 NAME
+
+XML::Easy::Tranform - XML processing with a clean interface
+
+=head1 DESCRIPTION
+
+The C<XML::Easy::Transform::> namespace exists to contain modules that
+perform transformations on XML documents, or parts thereof, in the form
+of L<XML::Easy::Element> and L<XML::Easy::Content> nodes.
+
+L<XML::Easy> is a collection of modules relating to the processing of
+XML data.  It includes functions to parse and serialise the standard
+textual form of XML.  When XML data is not in text form, L<XML::Easy>
+processes it in an abstract syntax-neutral form, as a collection of linked
+Perl objects.  This in-program data format shields XML users from the
+infelicities of XML syntax.  Modules under the C<XML::Easy::Transform::>
+namespace operate on XML data in this abstract structured form, not on
+textual XML.
+
+A transformation on XML data should normally be presented in the form
+of a function, which takes an L<XML::Easy::Element> node as its main
+parameter, and returns an L<XML::Easy::Element> node (or C<die>s
+on error).  The input node and output node each represent the root
+element of the XML document (or fragment thereof) being transformed.
+These nodes, of course, contain subordinate nodes, according to the
+structure of the XML data.  A reference to the top node is all that is
+required to effectively pass the whole document.
+
+=head1 OTHER DISTRIBUTIONS
+
+CPAN distributions under this namespace are:
+
+=over
+
+=item L<XML::Easy::Transform::RationalizeNamespacePrefixes>
+
+Manages XML Namespaces by hoisting all namespace declarations to the
+root of a document.
+
+=back
+
+=head1 SEE ALSO
+
+L<XML::Easy>
+
+=head1 AUTHOR
+
+Andrew Main (Zefram) <zefram@fysh.org>
+
+=head1 COPYRIGHT
+
+Copyright (C) 2009, 2010, 2011 Andrew Main (Zefram) <zefram@fysh.org>
+
+=head1 LICENSE
+
+This module is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+
+=cut
+
+1;
