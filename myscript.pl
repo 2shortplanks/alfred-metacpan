@@ -14,7 +14,7 @@ use HTTP::Request::Common;
 
 # setup the LWP
 my $ua = LWP::UserAgent->new;
-$ua->agent("AflredCPANPlugin/0.01");
+$ua->agent("alfred-metacpan/0.01");
 $ua->timeout(10);
 $ua->env_proxy;
 
