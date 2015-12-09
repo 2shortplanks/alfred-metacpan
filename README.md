@@ -11,3 +11,8 @@ Installation
 
 With Alfred 2 installed, simply [download the latest](https://dl.dropboxusercontent.com/u/301667/alfred-metacpan.alfredworkflow)
 and double-click.  Creating and importing Alfred workflows requires the [Alfred Powerpack](http://www.alfredapp.com/powerpack/), a purchased add-on.
+
+Contributing
+------------
+
+To run this script at the command line: `SEARCH_QUERY=LWP::UserAgent perl -I fatlib myscript.pl`
