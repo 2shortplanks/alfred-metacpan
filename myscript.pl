@@ -29,7 +29,7 @@ my $response = $ua->get($uri);
 my @results = map { $_->{fields} } @{ decode_json($response->content)->{hits}{hits} };
 print alfred_xml_bytes(map {+{
     title    => ($_->{documentation} || $_->{distribution}),
-    subtitle => $_->{distribution},
+    subtitle => sprintf('%s (%s)', $_->{release}, $_->{author} ),
     arg      => ($_->{documentation} || $_->{distribution}),
     icon     => "icon.png"
 }} @results);
