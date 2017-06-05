@@ -19,7 +19,7 @@ $ua->timeout(10);
 $ua->env_proxy;
 
 # build the URL
-my $uri = URI->new("http://api.metacpan.org/v0/search/autocomplete");
+my $uri = URI->new("https://fastapi.metacpan.org/v1/search/autocomplete");
 $uri->query_form( q => $ENV{SEARCH_QUERY} );
 
 # get the data
