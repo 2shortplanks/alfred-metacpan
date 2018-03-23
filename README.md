@@ -1,22 +1,23 @@
-alfred-metacpan
-===============
+# alfred-metacpan
 
-Search [MetaCPAN](http://metacpan.org/) from within
-[Alfred](http://www.alfredapp.com/) with as-you-type autocompletion
+Search [MetaCPAN](http://metacpan.org/) from within [Alfred](http://www.alfredapp.com/) with as-you-type autocompletion
 
-![video of alfred-metacpan in use](https://dl.dropboxusercontent.com/u/301667/metacpansearchforalfred.gif)
+## Installation
 
-Installation
-------------
+[Download](http://www.packal.org/workflow/metacpan) the latest version of this workflow from packal, then double click to install.
 
-With Alfred 2 installed, simply [download the latest](https://dl.dropboxusercontent.com/u/301667/alfred-metacpan.alfredworkflow)
-and double-click.  Creating and importing Alfred workflows requires the [Alfred Powerpack](http://www.alfredapp.com/powerpack/), a purchased add-on.
+Requires Alfred 3.
 
-Contributing
-------------
+## Copyright
 
-To run this script at the command line: `SEARCH_QUERY=LWP::UserAgent perl -I fatlib myscript.pl`
+Copyright Mark Fowler (mark@twoshortplanks.com) 2013-2018.
 
-To package this workflow: `git archive HEAD --format=zip > alfred-metacpan.alfredworkflow`
+This is free software.  You may distribute it under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/).
 
-Once the package is created, you can double-click it to import it into Alfred.
+### Third Party Icons
+
+![Binary Thinking](icons/binary-thinking.png)
+Binary Thinking made by [Freepik](http://www.freepik.com) from [www.flaticon.com](https://www.flaticon.com/) is licensed by [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)
+
+![Data Management Interface Symbol With Gears And Binary Code Numbers](icons/data-management-interface-symbol-with-gears-and-binary-code-numbers.png)
+Data Management Interface Symbol With Gears And Binary Code Numbers made by [Freepik](http://www.freepik.com) from [www.flaticon.com](https://www.flaticon.com/) is licensed by [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)

@@ -15,6 +15,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
@@ -31,10 +33,12 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>plusspaces</key>
-				<true/>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string>+</string>
 				<key>url</key>
-				<string>http://metacpan.org/module/{query}</string>
+				<string>{query}</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
@@ -42,32 +46,46 @@
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
 			<string>88FFB010-B6C3-4DF1-B00F-FA99BD65275F</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>keyword</key>
 				<string>cpan</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>1</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>Searching MetaCPAN…</string>
 				<key>script</key>
-				<string>use Cwd;
-use lib cwd."/fatlib";
-
-$ENV{SEARCH_QUERY} = &lt;&lt;'D01FBE0DB4B24AE0B864A2973C7D38FB';
-{query}
-D01FBE0DB4B24AE0B864A2973C7D38FB
-chomp $ENV{SEARCH_QUERY};
-
-do "./myscript.pl";</string>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>myscript.pl</string>
+				<key>subtext</key>
+				<string></string>
 				<key>title</key>
 				<string>Search MetaCPAN</string>
 				<key>type</key>
-				<integer>4</integer>
+				<integer>8</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -75,23 +93,45 @@ do "./myscript.pl";</string>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>83ED9FC4-91A8-475A-AB0B-A5C3F0E6A43D</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string># alfred-metacpan
+
+Search MetaCPAN (http://metacpan.org/) from within Alfred with as-you-type autocompletion
+
+## Copyright
+
+Copyright Mark Fowler (mark@twoshortplanks.com) 2013-2018.
+
+This is free software.  You may distribute it under CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)
+
+### Third Party Icons
+
+Binary Thinking by Freepik (http://www.freepik.com) from www.flaticon.com is licensed by CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)
+
+Data Management Interface Symbol With Gears And Binary Code Numbers made by Freepik (http://www.freepik.com) from www.flaticon.com is licensed by CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)</string>
 	<key>uidata</key>
 	<dict>
 		<key>83ED9FC4-91A8-475A-AB0B-A5C3F0E6A43D</key>
 		<dict>
+			<key>xpos</key>
+			<integer>80</integer>
 			<key>ypos</key>
-			<real>10</real>
+			<integer>140</integer>
 		</dict>
 		<key>88FFB010-B6C3-4DF1-B00F-FA99BD65275F</key>
 		<dict>
+			<key>xpos</key>
+			<integer>310</integer>
 			<key>ypos</key>
-			<real>20</real>
+			<integer>140</integer>
 		</dict>
 	</dict>
+	<key>version</key>
+	<string>2.0</string>
 	<key>webaddress</key>
 	<string>http://github.com/2shortplanks/alfred-metacpan</string>
 </dict>
